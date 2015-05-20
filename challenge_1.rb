@@ -9,6 +9,12 @@ puts "Let's play Fizz Buzz. Please give us a number:"
 user_input = gets.chomp
 
 (1..user_input.to_i).each do |number|
-  puts number
+  if number % 3 == 0
+    puts "#{number}: Fizz"
+  elsif number % 5 == 0
+    puts "#{number}: Buzz"
+  else
+    puts number
+  end
 end
 
